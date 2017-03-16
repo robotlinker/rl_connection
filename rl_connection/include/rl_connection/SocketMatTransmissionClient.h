@@ -25,8 +25,8 @@
 using namespace cv;  
   
 //待传输图像默认大小为 640*480，可修改  
-#define IMG_WIDTH 640   // 需传输图像的宽  
-#define IMG_HEIGHT 480  // 需传输图像的高  
+#define IMG_WIDTH 640  // 需传输图像的宽
+#define IMG_HEIGHT 480  // 需传输图像的高
 #define PACKAGE_NUM 2  
 //默认格式为CV_8UC3  
 #define BUFFER_SIZE IMG_WIDTH*IMG_HEIGHT*3/PACKAGE_NUM  

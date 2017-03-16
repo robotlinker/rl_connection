@@ -27,8 +27,8 @@ using namespace cv;
   
 #define PACKAGE_NUM 2  
   
-#define IMG_WIDTH 640  
-#define IMG_HEIGHT 480  
+#define IMG_WIDTH 640
+#define IMG_HEIGHT 480
   
 #define BLOCKSIZE IMG_WIDTH*IMG_HEIGHT*3/PACKAGE_NUM  
   

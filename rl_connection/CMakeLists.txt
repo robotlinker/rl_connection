@@ -13,6 +13,7 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
   cv_bridge
   image_transport
+  sensor_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -147,6 +148,10 @@ add_executable(rl_server_node
 add_dependencies(rl_server_node ${PROJECT_NAME}_generate_messages_cpp)
 target_link_libraries(rl_server_node ${catkin_LIBRARIES} ${roslib_LIBRARIES} ${OpenCV_LIBS})
 
+add_executable(image_converter_node
+               src/test/image_converter.cpp)
+add_dependencies(image_converter_node ${PROJECT_NAME}_generate_messages_cpp)
+target_link_libraries(image_converter_node ${catkin_LIBRARIES} ${roslib_LIBRARIES} ${OpenCV_LIBS})
 
 
 ## Rename C++ executable without prefix
